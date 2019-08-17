@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.note.ShowNoteActivity">
+
+    <include
+        layout="@layout/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/showLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_margin="20dp"
+        android:background="@drawable/label_press_normal"
+        android:padding="12dp"
+        android:ems="5"
+        android:text="Show label" />
+
+    <EditText
+        android:id="@+id/showSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:inputType="textMultiLine"
+        android:text="Show subject"
+        android:background="@drawable/label_press_normal"
+        android:padding="12dp"
+        android:gravity="start"
+        android:textSize="25sp"
+        android:layout_weight="1"/>
+</LinearLayout>
